@@ -1,13 +1,13 @@
-header_outer_container{
-    position:sticky;
+.header_outer_container{
+    position:sticky; /*Sticky headers, menus, or sections that remain visible during scrolling.*/
     top: 0;
     display: flex;
-    justify-content: center; /*Side*/
-    align-items: center; /*top-bottmon*/
+    justify-content: center;
+    align-items: center;
     /* background-color: rgb(148, 132, 132); */
     background-color:  rgb(20, 20, 20);
-    background-color: transparent;  /*when scrolled we can put data from background*/
-    height: 10vh; /*view hight* good for small screen*/
+    /* background-color: transparent; */
+    height: 10vh;
     color: white;
     transition:all 0.5s;
     transition-timing-function: ease-in;
@@ -30,7 +30,6 @@ header_outer_container{
     justify-content: space-between;
     align-items: center;
     list-style: none;
-    color: white; /*I wrote this*/
     cursor: pointer;
     /* background-color: lightblue; */
 }
@@ -39,7 +38,6 @@ header_outer_container{
     display: flex;
     justify-content: space-around;
     list-style: none;
-    color: white; /*I wrote this*/
     cursor: pointer;
     /* background-color: lightgreen; */
 }
