@@ -12,7 +12,9 @@ const Banner = () => {
         // console.log(request.data)
         setMovie(
           request.data.results[
-            Math.floor(Math.random() * request.data.results.length)  /*choose randumly show only one*/
+            Math.floor(
+              Math.random() * request.data.results.length
+            ) /*choose randumly show only one*/
           ]
         );
       } catch (error) {
@@ -29,7 +31,7 @@ const Banner = () => {
       className="banner"
       style={{
         backgroundSize: "cover",
-        backgroundImage: `url('https://image.tmdb.org/t/p/original${movie?.backdrop_path}')`, /*image*/
+        backgroundImage: `url('https://image.tmdb.org/t/p/original${movie?.backdrop_path}')` /*image*/,
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
       }}
